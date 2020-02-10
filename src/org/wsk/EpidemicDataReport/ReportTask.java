@@ -9,7 +9,7 @@ import java.awt.datatransfer.Transferable;
 import java.awt.event.KeyEvent;
 
 /**
- * @suthor wsk
+ * @author wsk
  * Task接口实现类
  */
 public class ReportTask implements Task {
