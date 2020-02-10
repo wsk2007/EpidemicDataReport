@@ -10,7 +10,7 @@ import java.util.Vector;
  * 工具类
  */
 public class Tool {
-    public final static boolean DEBUG = false; // 调试用
+    public final static boolean DEBUG = true; // 调试用
     private static int BUFFER_SIZE = 10240; // 缓冲区大小(缓冲区越大下载的越快,但是要根据自己的服务器配置)
     private Vector vDownLoad = new Vector(); // URL列表
     private Vector vFileList = new Vector();

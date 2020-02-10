@@ -32,15 +32,15 @@ public class EpidemicData implements Data {
 
         pr.append(str);
         int difi = pr.indexOf("\"diagnosed\":") + 12;
-        int dili = difi + 5;
+        int dili = difi + 6;
         int sufi = pr.indexOf("\"suspect\":") + 10;
-        int suli = sufi + 5;
+        int suli = sufi + 6;
         int dafi = pr.indexOf("\"date\":") + 8;
         int dali = dafi + 19;
         int cufi = pr.indexOf("\"cured\":") + 8;
-        int culi = cufi + 4;
+        int culi = cufi + 5;
         int defi = pr.indexOf("\"death\":") + 8;
-        int deli = defi + 3;
+        int deli = defi + 4;
         char[] di = {' ' , ' ' , ' ' , ' ' , ' ' , ' ' , ' ' , ' ', ' ' , ' ', ' ' , ' ' , ' ', ' ' , ' ' , ' ' , ' ' , ' ' , ' ' , ' ' , ' ' , ' ' , ' ', ' ' , ' ', ' ' , ' ' , ' ', ' ' , ' '};
         pr.getChars(difi, dili, di, 1);
         char[] su = {' ' , ' ' , ' ' , ' ' , ' ' , ' ' , ' ' , ' ', ' ' , ' ', ' ' , ' ' , ' ', ' ' , ' ', ' ' , ' ' , ' ' , ' ' , ' ' , ' ' , ' ' , ' ', ' ' , ' ', ' ' , ' ' , ' ', ' ' , ' '};
@@ -84,13 +84,13 @@ public class EpidemicData implements Data {
     @Override
     public Object getStartData() {
         StringBuilder sb = new StringBuilder();
-        sb.append("STARTUP SUCCESS");
+        sb.append("HOTFIX SUCCESS");
         sb.append("\r\n");
-        sb.append("服务启动成功！");
+        sb.append("热修复成功！");
         sb.append("\r\n");
-        sb.append("欢迎使用疫情信息自动通报服务");
+        sb.append("修复内容");
         sb.append("\r\n");
-        sb.append("本服务每天早上8:30和晚上8:30自动发布疫情信息和温馨提示");
+        sb.append("对数字类型添加一位缓冲来防止数量增长过快");
         sb.append("\r\n");
         sb.append("本服务采用WSKTimerAPI 作者：王晟凯");
         sb.append("\r\n");
