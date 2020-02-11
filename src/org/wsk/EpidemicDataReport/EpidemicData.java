@@ -84,13 +84,13 @@ public class EpidemicData implements Data {
     @Override
     public Object getStartData() {
         StringBuilder sb = new StringBuilder();
-        sb.append("HOTFIX SUCCESS");
+        sb.append("UPDATE SUCCESS");
         sb.append("\r\n");
-        sb.append("热修复成功！");
+        sb.append("升级成功！");
         sb.append("\r\n");
-        sb.append("修复内容");
+        sb.append("升级内容");
         sb.append("\r\n");
-        sb.append("对数字类型添加一位缓冲来防止数量增长过快");
+        sb.append("调整播报时间至早晚9点");
         sb.append("\r\n");
         sb.append("本服务采用WSKTimerAPI 作者：王晟凯");
         sb.append("\r\n");
